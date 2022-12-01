@@ -1,10 +1,14 @@
-import axios from "axios"
+import axios from "axios";
 
 export const markFarmerChoice = async (url: string) => {
-    const res = await axios.post(url, {}, {
-        headers: {
-            authorization: localStorage.getItem('token')
-        }
-    });
-    return res;
-}
+  const res = await axios.patch(
+    url,
+    {},
+    {
+      headers: {
+        authorization: localStorage.getItem("token"),
+      },
+    }
+  );
+  return res;
+};
