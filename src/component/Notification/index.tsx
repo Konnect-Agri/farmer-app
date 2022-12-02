@@ -29,7 +29,7 @@ const NotificationItem: React.FC<Props> = (props) => {
         <div className={styles.btn} onClick={() => submitResponse("reject")}>
           Reject
         </div>
-        <div className={styles.btn} onClick={() => submitResponse("approve")}>
+        <div className={styles.btn} onClick={() => submitResponse("accept")}>
           Accept
         </div>
       </div>
